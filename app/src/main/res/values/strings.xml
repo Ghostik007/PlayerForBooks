@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PlayerForBooks</string>
+    <string name="default_cat_name">Cat name</string>
+    <string name="KittyBtnDescription">Set Cat Name</string>
+    <string name="NewCatNameHint">Type new Cat name</string>
+    <string name="SetNewCatNameText">Type new Cat name</string>
 </resources>

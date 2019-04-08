@@ -4,15 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/KittyBtn"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:onClick="SetNewName"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="@string/KittyBtnDescription"
+        android:hapticFeedbackEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@drawable/pinkhellokitty"
+        tools:srcCompat="@drawable/pinkhellokitty" />
+
     <TextView
+        android:id="@+id/CatNameTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/default_cat_name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KittyBtn" />
+
+    <EditText
+        android:id="@+id/NewCatNamePT"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="72dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NewCatNameHint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/KittyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
