@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PlayerForBooks</string>
+    <string name="RedColorBtn">Red</string>
+    <string name="GreenColorBtn">Green</string>
+    <string name="YellowColorBtn">Yellow</string>
+    <string name="TextViewDefaultValue">No color</string>
 </resources>
